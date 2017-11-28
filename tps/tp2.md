@@ -70,7 +70,7 @@ Dans un premier temps, lorsque vous aurez réussi votre requête, votre message 
 
 #### Etape 4 : Affichage du nouveau message
 
-Recharger la page pour voir les nouveaux messages n’est pas acceptable. Ils existent plusieurs façons permettant de palier à ce problème. Nous allons voir une de ces solutions dans cette étape.
+Recharger la page pour voir les nouveaux messages n’est pas acceptable. Il existe plusieurs façons permettant de pallier ce problème. Nous allons voir une de ces solutions dans cette étape.
 
 Il est possible lors de l’exécution d’une mutation de renseigner des propriétés supplémentaires en plus de query. Ces propriétés permettent d’enrichir le comportement voulu. L’une de ces propriétés est refetchQueries et permet de spécifier une requête à exécuter une fois que le résultat de la mutation est reçu. Ici nous allons nous en servir pour aller rechercher les messages une fois la mutation terminé.
 
