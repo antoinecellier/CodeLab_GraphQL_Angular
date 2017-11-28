@@ -111,7 +111,7 @@ export class TchatService {
 }
 ```
 
-La variable `messages` n’a plus lieux d’être, supprimez la. Il faut à présent modifier la méthode `getMessages` pour envoyer une requête au serveur graphql. Cela peut être réalisé via l’objet `apollo` injecté plus haut et la méthode `query` qui prend en paramètre la requête à exécuter. Attention la requête doit être formaté pour être comprise par  l’objet `apollo`. Pour cette raison il existe une fonction de templating `gql`. Attention, nous vous conseillons de mettre votre requête dans une variable car dans la suite du TP elle sera réutilisé à différents endroits. Voici à quoi devrait ressembler votre méthode :
+La variable `messages` n’a plus lieux d’être, supprimez la. Il faut à présent modifier la méthode `getMessages` pour envoyer une requête au serveur graphql. Cela peut être réalisé via l’objet `apollo` injecté plus haut et la méthode `query` qui prend en paramètre la requête à exécuter. Attention la requête doit être formatée pour être comprise par  l’objet `apollo`. Pour cette raison il existe une fonction de templating `gql`. Attention, nous vous conseillons de mettre votre requête dans une variable car dans la suite du TP elle sera réutilisée à différents endroits. Voici à quoi devrait ressembler votre méthode :
 
 ```javascript
 import { Apollo } from 'apollo-angular'
