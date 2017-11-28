@@ -64,7 +64,7 @@ sendMessage() {
 }
 ```
 
-Nous vous conseillons de regarder les requêtes qui sont réalisée par votre navigateur. Vous devriez observer votre requête graphql partir, et en cas d’erreur, avoir quelques informations supplémentaires. 
+Nous vous conseillons de regarder les requêtes qui sont réalisées par votre navigateur. Vous devriez observer votre requête graphql partir, et en cas d’erreur, avoir quelques informations supplémentaires. 
 
 Dans un premier temps, lorsque vous aurez réussi votre requête, votre message ne s'affichera pas. Vous allez être forcé de recharger votre page pour voir votre message.
 
