@@ -1,8 +1,8 @@
 ## TP3 : Modification et utilisation du cache / store
 
-Lors de l’envoi d’un message, deux requêtes sont envoyées au serveur. La première envoie le message tandis que la seconde “refetch” les données pour les mettre à jour. Si on regarde de plus près le contenu de la première requête on remarquera qu’il contient le message envoyé avec le status “OK” en réponse (acquittement du message). Une optimisation possible va être d’ajouter le message reçu directement dans le store sans envoyer une nouvelle requête au serveur pour récupérer tous les message. Ainsi le message envoyé s’affichera lorsque l'acquittement sera reçu.
+Lors de l’envoi d’un message, deux requêtes sont envoyées au serveur. La première envoie le message tandis que la seconde “refetch” les données pour les mettre à jour. Si on regarde de plus près le contenu de la première requête on remarquera qu’il contient le message envoyé avec le status “OK” en réponse (acquittement du message). Une optimisation possible va être d’ajouter le message reçu directement dans le store sans envoyer une nouvelle requête au serveur pour récupérer tous les messages. Ainsi le message envoyé s’affichera lorsque l'acquittement sera reçu.
 
-Pour se faire nous allons utiliser une autre propriété offerte par mutate. C’est la propriété  `update` qui va vous permettre d’aller directement écrire dans le store des données. Ici l’objectif va donc d’aller ajouter dans le store le message reçu par l'acquittement de la requête d’envoi de message. Une fois ajouter dans le store l’IHM sera automatiquement mis à jour grâce au `watchQuery` réalisé dans le `getMessage`.
+Pour se faire nous allons utiliser une autre propriété offerte par mutate. C’est la propriété  `update` qui va vous permettre d’aller directement écrire dans le store des données. Ici l’objectif va donc être d’aller ajouter dans le store le message reçu par l'acquittement de la requête d’envoi de message. Une fois ajouté dans le store, l’IHM sera automatiquement mis à jour grâce au `watchQuery` réalisé dans le `getMessage`.
 
 La propriété update attend pour valeur une fonction de la forme suivante : `(store, receivedData) => {[VOTRE CODE]}`
 
