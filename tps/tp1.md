@@ -131,7 +131,7 @@ export class TchatService {
 ```
 
 #### Etape 2 : Modification du composant
-Il ne reste plus qu'à modifier le composant pour afficher le résultat. La méthode `getMessages` du service retourne maintenant un `Observable`. Il y a donc plusieurs façon d’afficher les messages. Vous pouvez soit utiliser la pipe `async` mais cette méthode vous demandera de travailler le résultat de la requête au préalable, soit assigner le retour de la fonction `subscribe` dans une variable messages.
+Il ne reste plus qu'à modifier le composant pour afficher le résultat. La méthode `getMessages` du service retourne maintenant un `Observable`. Il y a donc plusieurs façons d’afficher les messages. Vous pouvez soit utiliser la pipe `async` mais cette méthode vous demandera de travailler le résultat de la requête au préalable, soit assigner le retour de la fonction `subscribe` dans une variable messages.
 
 Le résultat retourné par la requête est un objet de la forme suivante :
 
