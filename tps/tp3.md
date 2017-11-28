@@ -6,7 +6,7 @@ Pour se faire nous allons utiliser une autre propriété offerte par mutate. C�
 
 La propriété update attend pour valeur une fonction de la forme suivante : `(store, receivedData) => {[VOTRE CODE]}`
 
-Le premier argument est un objet qui vous permettra d’accéder au store tandis que le second argument correspond aux données reçu par la requête. La fonction est un fonction callback automatiquement exécuté par apollo une fois la requête de mutation terminé. Vous n’avez donc pas à vous souciez de renseigner ces paramètres, apollo s’en charge pour vous.
+Le premier argument est un objet qui vous permettra d’accéder au store tandis que le second argument correspond aux données reçu par la requête. La fonction est un fonction callback automatiquement exécuté par apollo une fois la requête de mutation terminé. Vous n’avez donc pas à vous soucier de renseigner ces paramètres, apollo s’en charge pour vous.
 
 L’objet store possède deux fonctions qui vont nous interesser :
 
