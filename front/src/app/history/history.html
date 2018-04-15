@@ -1,3 +1,19 @@
-<div class="row">
-    <h3>History of messages</h3>
+<div class="container">
+    <div class="card" *ngFor="let message of messages">
+        <div class="d-flex flex-row p-2">
+            <img class="mr-3" [src]="message.sender.avatar">
+            <div class="mr-3">
+                {{ message.content }}
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-between p-2">
+            <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> {{ message.place }}
+            </div>
+            <div class="p-2">
+                <p class="font-italic">{{ message.datetime }}</p>
+            </div>
+        </div>
+        
+    </div>
 </div>
